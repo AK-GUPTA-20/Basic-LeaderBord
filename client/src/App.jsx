@@ -10,7 +10,7 @@ function App() {
   const [triggerRefresh, setTriggerRefresh] = useState(false);
 
   const fetchUsers = async () => {
-    const res = await fetch("http://localhost:5000/api/users");
+    const res = await fetch("https://basic-leaderbord-4.onrender.com/api/users");
     const data = await res.json();
     setUsers(data);
   };
