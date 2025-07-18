@@ -8,7 +8,7 @@ const ClaimButton = ({ selectedUser, onClaimed }) => {
       return;
     }
 
-    const res = await fetch("http://localhost:5000/api/claim", {
+    const res = await fetch("https://basic-leaderbord-4.onrender.com/api/claim", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
